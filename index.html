@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+	<link rel="stylesheet" href="./CSS/bootstrap.min.css">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: 100%;
+			height: 100%;
+		}
+		button{
+			float: left;
+		}
+		#game{
+			display: block;
+			margin: auto;
+		}
+		.life{
+			display: block;
+			position: absolute;
+			width: 10%;
+			margin: auto;
+			right: 20%;
+			top: 1%;
+		}
+	</style>
+</head>
+<body> 
+<div class="life">
+	<div class="progress">
+		<div id="lifebar" class="progress-bar progress-bar-striped bg-danger progress-bar-animated" style="width:100%">
+		</div>
+	</div>
+</div>
+
+<canvas id="game" style="background:url(mapa.jpg);"> </canvas>
+<!--<p id="coordinates">0</p>
+<button id="endDraw">Fin</button> -->
+<!-- Para grabar los bloques-->
+
+
+<script src="./Class/Game.js"></script>
+<script src="./Class/Entity.js"></script>
+<script src="./Class/Block.js"></script>
+<script src="./Class/Mob.js"></script>
+<script src="./Class/Collision.js"></script>
+<script src="./Class/Item.js"></script>
+<script src="./Class/Inventary.js"></script>
+<script src="./Class/Enemy.js"></script>
+<script src="./Class/Player.js"></script>
+<script src="./Levels/Level_One.js"></script>
+<script src="./jquery-3.3.1.slim.min.js"></script>
+<script src="./bootstrap.min.js"></script>
+<p id="output">
+</p>
+</body>
+</html>
