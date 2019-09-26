@@ -15,29 +15,38 @@
 		button{
 			float: left;
 		}
+		.portada{
+			display: block;
+			position: relative;
+			width: 1008px;
+			height: 100vh;
+			margin: auto;
+		}
 		#game{
 			display: block;
-			margin: auto;
+			width: 100%;
+			height: 600px;
 		}
 		.life{
 			display: block;
 			position: absolute;
 			width: 10%;
-			margin: auto;
-			right: 20%;
+			right: 0;
 			top: 1%;
 		}
 	</style>
 </head>
-<body> 
-<div class="life">
-	<div class="progress">
-		<div id="lifebar" class="progress-bar progress-bar-striped bg-danger progress-bar-animated" style="width:100%">
+<body>
+<div class="portada">
+	<div class="life">
+		<div class="progress">
+			<div id="lifebar" class="progress-bar progress-bar-striped bg-danger progress-bar-animated" style="width:100%">
+			</div>
 		</div>
 	</div>
+	<canvas id="game" style="background:url(mapa.jpg);">
+	 </canvas>
 </div>
-
-<canvas id="game" style="background:url(mapa.jpg);"> </canvas>
 <!--<p id="coordinates">0</p>
 <button id="endDraw">Fin</button> -->
 <!-- Para grabar los bloques-->
